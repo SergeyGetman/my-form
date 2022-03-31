@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import {useDispatch, useSelector} from 'react-redux'
+import {BrowserRouter, Route, Router, Switch} from "react-router-dom";
+import Firstpage from "./components/Firstpage";
+import SecondPage from "./components/SecondPage";
+
 
 function App() {
+
+    const dispatch = useDispatch();
+    const cash = useSelector((state) => state.cash)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1> Hello World</h1>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Firstpage} />
+                <Route path="/step2" component={SecondPage} />
+                {/*<Route path="/result" component={Result} />*/}
+            </Switch>
+        </BrowserRouter>
+
     </div>
   );
 }
