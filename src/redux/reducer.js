@@ -5,7 +5,7 @@ const initialState = {
     country: "Ukraine",
     city: "Kiev"
 }
-const reducer = (state = initialState, action) => {
+const reducer = (state, action) => {
     switch (action.type) {
         case "SET_COUNTRY" :
             return  {...state, town : state.country}

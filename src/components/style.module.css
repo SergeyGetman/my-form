@@ -1,0 +1,25 @@
+.page_title {
+    background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.fourth {
+    border-color: #f1c40f;
+    border-radius: 10px;
+    color: #181616;
+    height: 20rem;
+    background-image: -webkit-linear-gradient(35deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(35deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+    background-position: 0;
+    background-color: #3e7aea;
+}
