@@ -1,18 +1,34 @@
 
 
 const initialState = {
-    cash : 5,
-    country: "Ukraine",
-    city: "Kiev"
+    country: "",
+    num : 0,
+    pay : 0,
+    town : "",
+    number: "",
+    name : "",
+    age : "",
+
 }
-const reducer = (state, action) => {
+
+const reducer = ( state = initialState,  action) => {
+    console.log("this is action", action)
     switch (action.type) {
-        case "SET_COUNTRY" :
-            return  {...state, town : state.country}
-
-        case "SET_VALUE" :
-            return {...state, cash : state.cash + action.payload}
-
+        case 'SET_COUNTRY' : {
+            return {...state, country : action.country}
+        }
+        case "GET_NUMBER" : {
+            return  {...state, num : state.num + action.num + action.payload}
+        }
+        case "MIN_NUMBER" : {
+            return {...state, num : state.num - action.num - action.pay}
+        }
+        case "ADD_COUNTRY" : {
+            return  {...state, town : action.town}
+        }
+        case "ADD_ABOUT" : {
+            return  {...state, number : action.number, name : action.name, age : action.age }
+        }
 
         default:
             return state;
