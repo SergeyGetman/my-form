@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getMinNumber, setColunm, setCountry, setCountryTwo, setDoubleNumber} from "../redux/actions";
 import {useForm} from "react-hook-form";
 import { ErrorMessage } from '@hookform/error-message';
+import {useWatching} from "../hooks/useWatch.jsx";
 
 
 const Firstpage = () => {
@@ -20,30 +21,18 @@ const Firstpage = () => {
         register,
         handleSubmit,
         setValue,
-        reset,
         getValues,
         getFieldState,
-        watch,
-        formState : {errors, submitCount}
+        formState : {errors}
     } = useForm({   mode : "onChange"})
 
 
     const valuesInputs = getValues(['firstname', 'age', 'email']);
 
 
-    console.log('this is valuesInputs', valuesInputs )
-
-
     const onSubmit2 = (data) => {
         console.log('this is data', data)
     }
-
-    // const watchName = watch('name')
-    //
-    // useEffect(() => {
-    //     const subscription = watch((value, { name, type }) => console.log(value, name, type));
-    //     return () => subscription.unsubscribe();
-    // }, [watchName]);
 
 
 
@@ -85,7 +74,7 @@ const Firstpage = () => {
                     </div>
                     <br/>
                     <div>
-                        {/*{`this is ${number} ${age} ${name}`}*/}
+                        {`this is ${number} ${age} ${name}`}
                         <button className={cl.fourth} onClick={getInformation}>GET Information</button>
                     </div>
                     <br/>

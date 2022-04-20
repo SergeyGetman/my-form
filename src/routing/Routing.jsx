@@ -6,5 +6,9 @@ export const RoutingPage = {
         homePage : "Homepage",
         firstPage : "First Page",
         secondPage : "Second Page"
+    },
+    buttonsTitle : {
+        buttonOne : "next page",
+        buttonSecond : "next page"
     }
 }
