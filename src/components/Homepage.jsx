@@ -3,6 +3,11 @@ import cl from './style.module.css'
 import {Link} from "react-router-dom";
 import {Buttonsfor} from "./Buttonsfor";
 import {RoutingPage} from "../routing/Routing";
+import Components from "./upload/Components";
+import Acomponent from "./upload/Acomponent";
+import Fcomponent from "./upload/Fcomponent";
+
+
 
 const Homepage = () => {
     return (
@@ -14,6 +19,15 @@ const Homepage = () => {
                <Link to={RoutingPage.firstpage}>{RoutingPage.textTitle.firstPage}</Link>
                 <br/>
                 <Link to={RoutingPage.secondpage}>{RoutingPage.textTitle.secondPage}</Link>
+                <br/>
+                <br/>
+
+
+            </div>
+            <div>
+                <Acomponent />
+                <Components />
+                <Fcomponent />
             </div>
             <Buttonsfor />
         </div>

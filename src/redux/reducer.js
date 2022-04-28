@@ -12,7 +12,7 @@ const initialState = {
 }
 
 const reducer = ( state = initialState,  action) => {
-    console.log("this is action", action)
+
     switch (action.type) {
         case 'SET_COUNTRY' : {
             return {...state, country : action.country}
