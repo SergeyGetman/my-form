@@ -3,34 +3,19 @@ import cl from './style.module.css'
 import {Link} from "react-router-dom";
 import {Buttonsfor} from "./Buttonsfor";
 import {RoutingPage} from "../routing/Routing";
-import Components from "./upload/Components";
-import Acomponent from "./upload/Acomponent";
-import Fcomponent from "./upload/Fcomponent";
-
-
 
 const Homepage = () => {
     return (
         <>
-        <div className={cl.page_title}>
-            <div className={cl.text_shadow}>
-              <Link to={RoutingPage.home}>{RoutingPage.textTitle.homePage}</Link>
-                <br/>
-               <Link to={RoutingPage.firstpage}>{RoutingPage.textTitle.firstPage}</Link>
-                <br/>
-                <Link to={RoutingPage.secondpage}>{RoutingPage.textTitle.secondPage}</Link>
-                <br/>
-                <br/>
+            <div className={cl.page_title}>
+                <div className={cl.text_shadow}>
 
+                    <h1>This is home page</h1>
 
+                </div>
+
+                <Buttonsfor/>
             </div>
-            <div>
-                <Acomponent />
-                <Components />
-                <Fcomponent />
-            </div>
-            <Buttonsfor />
-        </div>
         </>
     );
 };

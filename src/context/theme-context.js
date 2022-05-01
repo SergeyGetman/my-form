@@ -1,6 +1,4 @@
 import {createContext} from "react";
-
-
 export const themes = {
     Light : {
         background : 'red',

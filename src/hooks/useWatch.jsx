@@ -1,7 +1,6 @@
 import {useEffect} from "react";
 import {useForm} from "react-hook-form";
 
-
 export function useWatching () {
     const {watch} = useForm()
     const watchName = watch('age')
@@ -11,4 +10,6 @@ export function useWatching () {
         return () => subscription.unsubscribe();
     }, [watchName]);
 }
+
+
 
