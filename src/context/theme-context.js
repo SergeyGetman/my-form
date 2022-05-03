@@ -1,14 +1,15 @@
-import {createContext} from "react";
+import { createContext } from 'react';
 export const themes = {
-    Light : {
-        background : 'red',
-        textColor : 'white'
-    },
-    Dark : {
-        background: "black",
-        textColor: 'white'
-    }
-}
+  Light: {
+    background: 'red',
+    textColor: 'white'
+  },
+  Dark: {
+    background: 'black',
+    textColor: 'white'
+  }
+};
 
-export const ThemeContext = createContext(themes.Light)
-export const ThemeContextDark = createContext(themes.Dark)
+export const ThemeContext = createContext(themes.Light);
+export const ThemeContextDark = createContext(themes.Dark);
+export const globalContext = createContext(themes.Light);

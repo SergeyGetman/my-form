@@ -1,3 +1,4 @@
+
 .page_title {
     background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
     background-position: center;
@@ -7,6 +8,11 @@
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
+.page_title:hover {
+    transition: 1s;
+    background-color: #f1c40f;
+}
+
 .fourth {
     border-color: #f1c40f;
     border-radius: 10px;
@@ -26,9 +32,8 @@
 }
 
 .text_shadow {
-    background: linear-gradient(-45deg, #FEE864, #F5965E);
     color: #f4f4f4;
-    margin-top: 10rem;
+    margin-top: 2rem;
     border-radius: 10px;
     width: 100%;
     font-size: 20px;
@@ -36,4 +41,22 @@
 }
 .body__third {
     background-color: #a4bae3;
+}
+.page_forms {
+    background-image: url(https://funart.pro/uploads/posts/2021-04/1618435058_27-funart_pro-p-oboi-fon-krasivii-goluboi-fon-27.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.page_home {
+    background-image: url(https://cdn.oboi7.com/7de355e0d79e142a45f8eeaf3e908141183d6a4e/doktor-haus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
