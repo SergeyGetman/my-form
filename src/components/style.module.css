@@ -1,62 +1,86 @@
-
 .page_title {
-    background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+  background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 .page_title:hover {
-    transition: 1s;
-    background-color: #f1c40f;
+  transition: 1s;
+  background-color: #f1c40f;
 }
 
 .fourth {
-    border-color: #f1c40f;
-    border-radius: 10px;
-    color: #181616;
-    height: 3rem;
-    margin: 2rem;
-    background-image: -webkit-linear-gradient(15deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(1deg, #f1c40f 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 300%;
-    -webkit-transition: background 300ms ease-in-out;
-    transition: background 300ms ease-in-out;
+  border-color: #f1c40f;
+  border-radius: 10px;
+  color: #181616;
+  height: 3rem;
+  margin: 2rem;
+  background-image: -webkit-linear-gradient(15deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(1deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 300%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
 }
 .fourth:hover {
-    background-position: 0;
-    background-color: #3e7aea;
+  background-position: 0;
+  background-color: #3e7aea;
 }
 
 .text_shadow {
-    color: #f4f4f4;
-    margin-top: 2rem;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 20px;
-    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+  color: #f4f4f4;
+  margin-top: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 20px;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070,
+    5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757,
+    10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, 0.4),
+    18px 18px 10px rgba(0, 0, 0, 0.4);
 }
 .body__third {
-    background-color: #a4bae3;
+  background-color: #a4bae3;
 }
 .page_forms {
-    background-image: url(https://funart.pro/uploads/posts/2021-04/1618435058_27-funart_pro-p-oboi-fon-krasivii-goluboi-fon-27.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+  background-image: url(https://funart.pro/uploads/posts/2021-04/1618435058_27-funart_pro-p-oboi-fon-krasivii-goluboi-fon-27.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 .page_home {
-    background-image: url(https://cdn.oboi7.com/7de355e0d79e142a45f8eeaf3e908141183d6a4e/doktor-haus.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+  background-image: url(https://cdn.oboi7.com/7de355e0d79e142a45f8eeaf3e908141183d6a4e/doktor-haus.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.style_one {
+  background-color: #9f41c5;
+  font-weight: bold;
+}
+
+.style_two {
+  width: 400px;
+  border: 2px solid red;
+}
+
+.page__movies {
+  background-color: #b6cad0;
+}
+.block__movies {
+  background-color: #c5ef71;
+  height: 100%;
+  width: 300px;
+  margin-left: 33%;
+  padding: 10px;
+  display: flex;
 }

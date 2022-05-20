@@ -5,6 +5,8 @@ export const RoutingPage = {
   thirdpage: '/thirdpage',
   forms: '/forms',
   pageWrapper: '/pageWrapper',
+  taskMovies: '/taskmovies',
+
   textTitle: {
     homePage: 'Homepage',
     firstPage: 'First Page',

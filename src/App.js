@@ -9,6 +9,7 @@ import { RoutingPage } from './routing/Routing';
 import Thirdpage from './components/Thirdpage';
 import Form from './components/Form';
 import PageWrapper from './components/PageWrapper';
+import TaskForMovies from './components/TaskForMovies';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Link to={RoutingPage.thirdpage}>{RoutingPage.textTitle.thirdpage}</Link>
             <Link to={RoutingPage.forms}>{RoutingPage.textTitle.formTitle}</Link>
             <Link to={RoutingPage.pageWrapper}>Page wrapper</Link>
+            <Link to={RoutingPage.taskMovies}>Test</Link>
           </header>
         </div>
 
@@ -31,6 +33,7 @@ function App() {
           <Route exact path={RoutingPage.thirdpage} component={Thirdpage} />
           <Route exact path={RoutingPage.forms} component={Form} />
           <Route exact path={RoutingPage.pageWrapper} component={PageWrapper} />
+          <Route exact path={RoutingPage.taskMovies} component={TaskForMovies} />
           <Route path={'/'} component={Homepage} />
         </Switch>
       </div>
