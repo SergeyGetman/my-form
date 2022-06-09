@@ -19,26 +19,26 @@ const TaskForMovies = () => {
       <h2> Titles </h2>
       <div className={cl.block__movies}>
         {payload.titles.map((e, i) => (
-          <div key={i}>{e}</div>
+          <div key={i}>{`${e} - `}</div>
         ))}
       </div>
       <div>
         <h2>releases_years</h2>
         <div className={cl.block__movies}>
           {payload.releases_years.map((e, i) => (
-            <div key={i}>{` ${e + ' '} `}</div>
+            <div key={i}>{` ${e}:  `}</div>
           ))}
         </div>
         <h2>budget</h2>
         <div className={cl.block__movies}>
           {payload.budget.map((e, i) => (
-            <div key={i}>{` ${e} `}</div>
+            <div key={i}>{` ${e}: `}</div>
           ))}
         </div>
         <h2>box_office</h2>
         <div className={cl.block__movies}>
           {payload.box_office.map((e, i) => (
-            <div key={i}>{` ${e} `}</div>
+            <div key={i}>{` ${e} - `}</div>
           ))}
         </div>
       </div>
